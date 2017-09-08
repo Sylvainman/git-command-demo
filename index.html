@@ -92,6 +92,51 @@
                 <li>ajouter nu nouveau calque à mon fichier index.html</li>             
             </ul>
         </div>
+
+        <!-- Layer 6-->
+        <div class="step slide" id="layer-6" data-x="6000">
+            <h1>Affichage log</h1>
+            <p>
+                git log
+                <span>affiche les commits</span>
+            </p>
+            <p>
+                git log -1
+                <span>affiche le dernier commit</span>
+            </p>
+            <p>
+                git log --pretty=oneline --max-count=2
+                <span>affiche sur une ligne le deux dernier commits</span> 
+            </p>
+             <p>
+                git log --pretty=oneline --since="5 minutes ago"
+                <span>affiche les derniers commits dans les 5 dernieres minutes</span> 
+            </p>
+            <p>
+                git log --oneline --author="Sylvain"
+                <span>affiche les derniers commits dans les 5 dernieres minutes</span> 
+            </p>
+            <p>
+                git log --oneline --all --pretty=format:"%h %cd %s (%an) %d" --since="1 days ago"
+                <span>affiche les derniers commits dans les 5 dernieres minutes</span> 
+            </p>
+        </div>
+
+         <!-- Layer 6-->
+        <div class="step slide" id="layer-7" data-x="6000" data-y="1000">
+            <h1>Format Log</h1>
+            <ul>
+                <li>--pretty="..." format de sortie</li>
+                <li>%h abbreviation hash code commit</li>
+                <li>%d commit decoration</li>
+                <li>%ad commit date</li>
+                <li>%s commentaires</li>
+                <li>%an author name</li>
+                <li>--graph commit tree</li>
+                <li>--date=...</li>
+            </ul>
+
+        </div>
     </div>
     <script src="node_modules/impress.js/js/impress.js"></script>
     <script>
